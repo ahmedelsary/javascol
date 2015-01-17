@@ -1,0 +1,231 @@
+<html>
+<head>
+<title>::Login::</title>
+<link href="css/reset-min.css" rel="stylesheet" type="text/css" />
+<link href="css/fonts-min.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+	<script type="text/javascript" src="js/validationlogin.js">
+	</script>
+
+
+<style type="text/css" >
+
+
+
+footer
+{
+    margin:0px;
+    text-align:center;
+    background-color:#666666;
+     border-radius:0px 0px  10px 10px ;
+    -webkit-border-radius:0px 0px  10px 10px;
+    -moz-border-radius:0px 0px  10px 10px;
+    font-size:20px;
+   font-weight:bold;
+   
+    padding:0px;
+    color:#e3d3b2;
+    padding:1px;
+    clear:both;
+    
+}
+
+
+a {
+    color:#e3d3b2;
+    text-decoration:none;
+}
+    a:hover {
+        text-decoration:underline;
+    }
+
+	
+	
+	 #news {
+	 
+	 /*border:#333 2px solid;
+	 
+     border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    */font-size:24px;
+    font-weight:bold;
+    padding:5px;
+    color:white;
+	background-color:#666666;
+	
+    }
+	
+	header{
+	
+	margin-bottom:20px;
+	width:100%;
+	height:150;
+	text-align:center;
+    background-color:#666666;
+     border-radius:10px 10px  0px 0px ;
+    -webkit-border-radius:10px 10px  0px 0px;
+    -moz-border-radius:10px 10px  0px 0px;
+    font-size:20px;
+   font-weight:bold;
+	
+	
+	}
+	
+
+
+
+
+fieldset{
+   
+text-align:center;
+background:#e3d3b2;
+	font-family:tahoma;
+    font-weight:bold;
+    padding:5px;
+
+	font-size:24px;
+
+}
+
+fieldset form table tr td span{
+color:#ff0000;
+
+background:#e2e3e3;
+
+}
+
+fieldset form table tr td input
+{
+margin:10px;
+}
+fieldset form table tr td input.btn {
+border:none;
+padding:5px;
+background:#01279f;
+color:white;
+
+font-size:18px;
+
+ border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+
+}
+
+fieldset form table tr td input.btn:hover {
+background:#459acd;
+}
+
+table{	
+	margin:20px ;
+	color:#459acd;
+	}
+	legend{
+	
+	font-size:25px;
+	font-wight:bold;
+	color:#459acd;
+	
+	}
+	
+
+
+
+</style>
+
+
+
+
+
+
+</head>
+<body onload="document.getElementById('fname').focus();">
+
+
+
+<div id="container">
+<br />
+<header>
+
+<div id="logo"><a href="index.htm"> </a></div>
+<div id="slogon" > 
+<canvas id="can" width="400" height="100" >
+UPDATE UER BROWSER!!!!!!!!!!!!!!!!!!!! 
+<canvas />
+<script>
+
+var can=document.getElementById("can");
+var cav= can.getContext("2d");
+  
+//cav.globalAlpha=.3;
+
+//cav.fillRect(0,0,can.width,can.height);
+
+
+cav.font="30px tahoma";
+cav.fillStyle = "#e3d3b2";
+cav.fillText("Discover a new way to play",20,80); 
+
+cav.strokeStyle = "white";
+cav.lineWidth=1;
+cav.strokeText("Discover a new way to play",20,80); 
+
+
+</script>
+
+</div>
+
+</header>
+
+<nav>
+<a class="l1" href="index.htm" class="sel"  >  </a>
+<a class="l2" href="about.htm"> </a>
+<a class="l3" href="contact.htm"></a>
+<a class="l4" href="play.htm"> </a>
+</nav>
+
+<div id="news">
+
+<marquee id="mar" behavior="scroll" direction="left">
+</marquee>
+
+
+<script>
+var mar={"supercar":["Welcome in my site have a nice time","Enjoy playing the game"]};
+
+document.getElementById("mar").innerHTML=mar.supercar[0]+" :: "+mar.supercar[1];
+
+
+</script>
+
+</div>
+
+
+
+<div id="content">
+
+
+<br /><br />
+<img src="imgs/mh.png" />
+<img src="imgs/asa.png" />
+<img src="imgs/asa2.png" />
+
+
+</div>
+<br/>
+
+
+<footer>
+<p><a href="register.htm"> Registration</a >&nbsp; &nbsp; | &nbsp; &nbsp;<a href="login.htm">Login</a></p>
+<p> Copyrights &copy; are reserved to ITI. </p>
+
+</footer>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+body{  
+  background-color:#63A2C3; 
+background:url(../imgs/bg.png);
+  }
+#container{
+
+    width:800px;
+    margin:0px auto;
+	
+	
+}
+
+#logo{
+    float:left;
+    width:200px;
+    height:100px;   
+}
+#logo a{
+    width:250px;
+    height:130px;
+    display:block;
+    background-image: url("../imgs/logo.png");
+    background-size:cover;   
+}
+nav{
+	height:63px;
+    width:800px; 
+    margin-left:100px;   
+	}
+    		
+    
+nav a {
+    float:left;
+width: 149px;
+height: 63px;
+display:block;
+}
+nav .l1{
+background-image: url("../imgs/home.png");
+	}
+    nav .l2{    
+background-image: url("../imgs/about.png");
+	}
+    nav .l3{
+background-image: url("../imgs/contact.png");
+	}
+    nav .l4{
+background-image: url("../imgs/play.png");
+	}
+                    
+ nav .l1:hover {
+background:url('../imgs/home-bg.png');
+	}
+     nav .l2:hover {
+background:url('../imgs/about-bg.png');
+	}
+     nav .l3:hover {
+background:url('../imgs/contact-bg.png');
+	}
+     nav .l4:hover {
+background:url('../imgs/play-bg.png');
+	}                
+       
+    }
+
+
+#content{
+    width:800px;
+    height:600px;
+ 
+}    
+	

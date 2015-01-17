@@ -1,0 +1,290 @@
+<html>
+<head>
+<title></title>
+<link href="css/reset-min.css" rel="stylesheet" type="text/css" />
+<link href="css/fonts-min.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+
+<style type="text/css" >
+
+<!-- 
+#slider {
+border: #333 solid 2px;
+height:450px;
+width:650px;
+margin :20px auto;
+
+position:relative;
+
+}
+
+#img{
+height:450px;
+width:650px;
+position :absolute;
+
+
+}
+
+
+#left_holder{
+
+
+height:350px;
+width:100px;
+position :absolute;
+top:0px;
+left:0px;
+
+
+}
+
+
+#right_holder{
+
+height:350px;
+width:100px;
+position :absolute;
+top:0px;
+right:0px;
+
+
+}
+
+#bottom{
+
+height:75px;
+width:650px;
+background-color: rgba(0,0,0,0.3);
+font-family:Arial;
+font-size: 40px;
+color:white;
+position :absolute;
+bottom:0px;
+left:0px;
+
+
+
+}
+.left{
+width:50px;
+height:50px;
+
+
+
+position:absolute;
+top:45%;
+left:0px;
+}
+
+
+.right{
+width:50px;
+height:50px;
+
+position:absolute;
+top:45%;
+right:0px;
+}
+
+
+
+
+
+footer
+{
+    margin:0px;
+    text-align:center;
+    background-color:#666666;
+     border-radius:0px 0px  10px 10px ;
+    -webkit-border-radius:0px 0px  10px 10px;
+    -moz-border-radius:0px 0px  10px 10px;
+    font-size:20px;
+   font-weight:bold;
+   
+    padding:0px;
+    color:#e3d3b2;
+    padding:1px;
+    clear:both;
+    
+}
+
+
+a {
+    color:#e3d3b2;
+    text-decoration:none;
+}
+    a:hover {
+        text-decoration:underline;
+    }
+
+	
+	
+	 #news {
+	 
+	 /*border:#333 2px solid;
+	 
+     border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    */font-size:24px;
+    font-weight:bold;
+    padding:5px;
+    color:white;
+	background-color:#666666;
+	
+    }
+	
+	header{
+	
+	margin-bottom:20px;
+	width:100%;
+	height:150;
+	text-align:center;
+    background-color:#666666;
+     border-radius:10px 10px  0px 0px ;
+    -webkit-border-radius:10px 10px  0px 0px;
+    -moz-border-radius:10px 10px  0px 0px;
+    font-size:20px;
+   font-weight:bold;
+	
+	
+	}
+	
+/*
+#slogon{
+
+	float:left;
+   font-size:24px;
+   font-weight:bold;
+   
+   color:#e3d3b2;
+   
+   padding:40px;
+	
+}
+*/
+-->
+</style>
+
+
+
+<script>
+var total=3;
+var imagecount=1;
+
+function slider(x){
+
+imagecount=imagecount+x;
+
+
+
+if(imagecount > total){
+imagecount=1;
+}
+
+if(imagecount < 1){
+imagecount=total;
+}
+document.getElementById("img").src="img/"+ imagecount +".jpg";
+document.getElementById("bottom").innerHTML="Level "+ imagecount;
+
+}
+
+
+setInterval("slider(1)",3000);
+
+</script>
+
+
+
+
+
+</head>
+<body>
+
+
+
+<div id="container">
+<br />
+<header>
+
+<div id="logo"><a href="index.htm"> </a></div>
+<div id="slogon" > 
+<canvas id="can" width="400" height="100" >
+UPDATE UER BROWSER!!!!!!!!!!!!!!!!!!!! 
+<canvas />
+<script>
+
+var can=document.getElementById("can");
+var cav= can.getContext("2d");
+  
+//cav.globalAlpha=.3;
+
+//cav.fillRect(0,0,can.width,can.height);
+
+
+cav.font="30px tahoma";
+cav.fillStyle = "#e3d3b2";
+cav.fillText("Discover a new way to play",20,80); 
+
+cav.strokeStyle = "white";
+cav.lineWidth=1;
+cav.strokeText("Discover a new way to play",20,80); 
+
+
+</script>
+
+</div>
+
+</header>
+
+<nav>
+<a class="l1" href="index.htm" class="sel"  >  </a>
+<a class="l2" href="about.htm"> </a>
+<a class="l3" href="contact.htm"></a>
+<a class="l4" href="play.htm"> </a>
+</nav>
+
+<div id="news">
+
+<marquee id="mar" behavior="scroll" direction="left">
+</marquee>
+
+
+<script>
+var mar={"supercar":["Welcome in my site have a nice time","Enjoy playing the game"]};
+
+document.getElementById("mar").innerHTML=mar.supercar[0]+" :: "+mar.supercar[1];
+
+
+</script>
+
+</div>
+
+
+
+<div id="content">
+<div id="slider" >
+<img id="img" src="img/1.jpg"    />
+<div id="left_holder"  > <img class="left" src="img/al.png" onclick="slider(-1);" /></div>
+<div id="right_holder" ><img class="right" src="img/ar.png"  onclick="slider(1);"/></div>
+<div id="bottom" >Level 1</div>
+</div>
+</div>
+<br /><br /><br /><br /><br />
+
+
+<footer>
+<p><a href="register.htm"> Registration</a >&nbsp; &nbsp; | &nbsp; &nbsp;<a href="login.htm">Login</a></p>
+<p> Copyrights &copy; are reserved to ITI. </p>
+
+</footer>
+
+</div>
+
+
+</body>
+</html>
